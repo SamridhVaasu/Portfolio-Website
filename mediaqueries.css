@@ -101,3 +101,18 @@
     text-align: justify;
   }
 }
+
+
+@media (max-width: 768px) {
+  #experience .about-containers {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  #experience h2 {
+    font-size: 1.5rem;
+  }
+
+  #experience p {
+    font-size: 0.9rem;
+  }
+}

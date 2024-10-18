@@ -125,6 +125,7 @@
         margin-bottom: 0.5rem;
       }
     </style>
+    
   </head>
   <body>
     <nav id="desktop-nav">
@@ -161,9 +162,9 @@
       </div>
     </nav>
       
-    <section id="profile">
+    <section id="profile" class="scroll-fade">
       <div class="section__pic-container">
-        <img src="file.png" alt="Samridh Singh profile picture" />
+        <img src="profile.png" alt="Samridh Singh profile picture" />
       </div>
         
       <div class="section__text">
@@ -197,53 +198,69 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="scroll-fade">
       <p class="section__text__p1">Get To Know More</p>
-      <div style="display: flex; align-items: center; justify-content: center;">
-        <h1 class="title">About Me</h1>
+      <div class="title-container">
+          <h1 class="title">About Me</h1>
       </div>
+
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="about.JPG"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ months <br />IoT Internships</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech (IIoT)<br />Guru Gobind Singh Indraprastha University</p>
-            </div>
+          <div class="section__pic-container">
+              <img src="about.JPG" alt="Profile picture" class="about-pic" />
           </div>
-          <div class="text-container">
-            <p>
-              IoT Engineer in training with a strong passion for Arduino, Robotics, and AI. 
-              Cyber Hackathon Winner (Delhi Police), dedicated to developing innovative solutions in technology. 
-              Experienced in AI, ML, Deep Learning, IoT, and Cloud Computing. 
-              Skilled in various programming languages and frameworks, with a focus on practical applications in Industrial IoT.
-            </p>
+          <div class="about-details-container">
+              <div class="about-containers">
+                
+                
+                  <!-- Education Timeline -->
+                  
+                    <div class="education-timeline">
+                        <img src="education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <br>
+                        <div class="timeline">
+                          <div class="education-item">
+                              <div class="timeline-dot"></div>
+                              <div class="timeline-content">
+                                  <p><strong>B.Tech (IIoT)</strong></p>
+                                  <p>Guru Gobind Singh Indraprastha University</p>
+                                  <p>2023 - Present</p>
+                              </div>
+                          </div>
+                          <div class="education-item">
+                              <div class="timeline-dot"></div>
+                              <div class="timeline-content">
+                                  <p><strong>Senior Secondary (Class 12th) [93%]</strong></p>
+                                  <p>Modern Convent School</p>
+                                  <p>2023</p>
+                              </div>
+                          </div>
+                          <div class="education-item">
+                              <div class="timeline-dot"></div>
+                              <div class="timeline-content">
+                                  <p><strong>Secondary (Class 10th) [95.6%]</strong></p>
+                                  <p>Modern Convent School</p>
+                                  <p>2021</p>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-container">
+                      <h3>About Me</h3>
+                      <br>
+                      <br>
+                      <p>
+                        Hi, I’m <strong>Samridh Singh</strong>, a passionate engineer with a keen interest in <strong>IoT, embedded systems, and machine learning</strong>. With hands-on experience in innovative projects like plant disease detection using computer vision, plant diseases detection, and IoT automation systems, I’m constantly exploring the intersection of technology and real-world challenges. My work on glaucoma detection, spam detection and plant diseases detection reflects my drive for innovation and problem-solving. Beyond academics, I’ve participated in hackathons, ideation competitions, and model United Nations, developing leadership, teamwork, and communication skills. I also hold a <strong>black belt in karate</strong>, demonstrating my commitment to discipline and perseverance.
+                      </p>
+                    </div>
+              </div>
+              
           </div>
-        </div>
       </div>
-      
-    </section>
-    <section id="achievements">
+  </section>
+  
+  
+    <section id="achievements" class="scroll-fade">
       <p class="section__text__p1">Proud of My</p>
       <h1 class="title">Achievements</h1>
       <div class="experience-details-container">
@@ -279,98 +296,64 @@
         </div>
       </div>
     </section>
-    <section id="experience">
+    <section id="experience" class="scroll-fade">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+      <br>
+      <div class="experience-container about-containers">
+        <!-- Container for Technical and Soft Skills -->
+        <div class="skills-container">
+          <!-- Technical Skills -->
           <div class="details-container">
             <h2 class="experience-sub-title">Technical Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AI, ML and Deep Learning</h3>
-                  <p>TensorFlow, PyTorch, Scikit-learn, OpenCV, Neural Networks, CNN</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Internet of Things (IoT)</h3>
-                  <p>Arduino, Raspberry Pi, ESP32, NB-IoT, LoRa, LoRaWAN, MQTT, CoAP, Zigbee</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Cloud Computing</h3>
-                  <p>Google Cloud Platform, Kubernetes</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Web Technologies</h3>
-                  <p>HTML5, CSS3, JavaScript, RESTful APIs</p>
-                </div>
-              </article>   
-            </div>
+            <ul>
+              <li><strong>AI, ML, and Deep Learning:</strong> TensorFlow, Scikit-learn, OpenCV, Neural Networks, CNN</li>
+              <li><strong>Internet of Things (IoT):</strong> Arduino, Raspberry Pi, ESP32, NB-IoT, LoRa, LoRaWAN, MQTT</li>
+              <li><strong>Cloud Computing:</strong> Google Cloud Platform, Kubernetes</li>
+              <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, RESTful APIs</li>
+            </ul>
           </div>
+    
+          <!-- Soft Skills -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Work Experience</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>IETE Internship</h3>
-                  <p>(August 2024 - September 2024)</p>
-                  <ul>
-                    <p>This internship provided an in-depth understanding of image processing techniques using OpenCV.</p>
-                  </ul>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  
-                  <h3>Pantech e learning IoT Intern</h3>
-                  <p>(June 2024 - July 2024)</p>
-                  <ul>
-                    <p>During this internship, I gained hands-on experience in Internet of Things (IoT) and embedded systems.</p>
-                  </ul>
-                </div>
-              </article>
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <ul>
+              <li><strong>Leadership & Collaboration:</strong> Proven ability to lead teams in high-pressure environments like hackathons, while fostering collaboration across multidisciplinary teams to achieve project goals.</li>
+              <li><strong>Effective Communication & Problem Solving:</strong> Strong communication skills honed through MUN and conferences, coupled with a problem-solving mindset for tackling complex technical challenges in AI, IoT, and robotics.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Work Experience as a Timeline -->
+        <div class="timeline-container work-container">
+          <h2 class="experience-sub-title">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3><strong>Image Processing Intern</strong> – Institution of Electronics and Telecommunication Engineers (IETE)</h3>
+                <p><em>(August 2024 - September 2024)</em></p>
+                <p>Gained in-depth understanding of image processing techniques using OpenCV, contributing to real-time object detection projects.</p>
+                <p>Worked on practical applications involving object tracking and segmentation, improving system efficiency for dynamic environments.</p>
+              </div>
+            </div>
+    
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3><strong>IoT Intern</strong> – Pantech eLearning</h3>
+                <p><em>(June 2024 - July 2024)</em></p>
+                <p>Worked with Arduino IDE, microcontrollers, and sensors to develop real-time IoT solutions.</p>
+                <p>Explored the use of NB-IoT and LoRa for low-power wide-area network (LPWAN) communication, enhancing efficiency in long-range IoT deployments.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="projects">
+    
+    
+    <section id="projects" class="scroll-fade">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -429,7 +412,7 @@
         </div>
       </div>
     </section>
-    <section id="cocurricular">
+    <section id="cocurricular" class="scroll-fade">
       <p class="section__text__p1">My Additional</p>
       <h1 class="title">Co-Curricular Activities</h1>
       <div class="experience-details-container">
@@ -465,7 +448,39 @@
       </div>
       
     </section>
-    <section id="contact">
+    <section id="certifications" class="scroll-fade">
+      <p class="section__text__p1">Enhancing My Knowledge</p>
+      <h1 class="title">Certifications & Workshops</h1>
+      
+      <div class="certifications-container about-containers">
+        <!-- Certifications List -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Certifications</h2>
+          <ul>
+            <li><strong>Google Cloud Study Jam</strong> – Explored Google Cloud’s compute, storage, data analytics, AI & ML tools.</li>
+            <li><strong>Internet of Things Business Impact</strong> – Understood how IoT transforms businesses and optimizes processes.</li>
+            <li><strong>Ethics in the Age of Generative AI</strong> – Explored ethical considerations around AI and generative technologies.</li>
+            <li><strong>Introduction to Artificial Intelligence</strong> – Acquired fundamental knowledge of AI concepts and real-world applications.</li>
+          </ul>
+        </div>
+        
+        <!-- Workshops List -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Workshops</h2>
+          <ul>
+            <li><strong>5G and Beyond Conference</strong> – IIT Delhi</li>
+            <li><strong>Arduino and Mobile Robotics Workshop</strong> – IIT Delhi</li>
+            <li><strong>IoT Workshop</strong> – Eigen Technologies Pvt Ltd</li>
+            <li><strong>Open Day Event</strong> – National Physical Laboratory (NPL)</li>
+            <li><strong>Enabling Massive IoT with LPWAN Technologies</strong> – IEEE</li>
+            <li><strong>Maths for Programmers</strong> – Scaler</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact" class="scroll-fade">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
